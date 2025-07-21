@@ -136,7 +136,7 @@ function submitGuess() {
   if (locked) return;
 
   currentGuess = input.value.toUpperCase();
-  
+
   const guess = currentGuess.toLowerCase();
 
   if (guess.length !== WORD_LENGTH) {
@@ -184,4 +184,8 @@ function submitGuess() {
   synchronizeInput();
 }
 
-
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(() => console.log("✅ Service worker enregistré !"))
+      .catch(err => console.error("❌ Erreur SW:", err));
+  }
