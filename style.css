@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  margin-bottom: 25px;
+  margin: 50px;
 }
 
 #game {
@@ -90,7 +90,7 @@ input {
   background-color: #ddd;
   border: none;
   border-radius: 4px;
-  width: 40px;
+  width: 30px;
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
@@ -157,7 +157,7 @@ input {
 
 @media only screen and (max-width: 767px) {
   .tile { width: 28px; font-size: 16px; }
-  .key { width: 22px; padding: 6px; font-size: 0.95em; }
+  .key { margin-top:20px; width:60px; height: 50px; padding: 6px; font-size: 0.95em; }
   #game, .keyboard { max-width: 98vw; }
   .legend { font-size: 0.95em; }
 }
