@@ -73,7 +73,7 @@ input {
 
 #keyEnter, #keyBack {
   width: 84.5px;
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: bold;
   padding: 10px;
   background-color: #ddd;
