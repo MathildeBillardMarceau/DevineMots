@@ -2,7 +2,7 @@ const WORD_LENGTH = 5;
 const MAX_TURNS = 6;
 
 // Exemple de mots à tirer aléatoirement :
-//const WORD_LIST = 
+const WORD_LIST = mots;
 
 const solution = WORD_LIST[Math.floor(Math.random() * WORD_LIST.length)];
 let currentTurn = 0;
@@ -12,8 +12,8 @@ const form = document.getElementById("guess-form");
 const input = document.getElementById("guess-input");
 const message = document.getElementById("message");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
   const guess = input.value.toLowerCase();
 
   if (guess.length !== WORD_LENGTH) {
