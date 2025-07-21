@@ -15,34 +15,24 @@ const message = document.getElementById("message");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   submitGuess();
-
-  if (guess.length !== WORD_LENGTH) {
-    alert("Le mot doit faire 5 lettres.");
-    return;
-  }
-
-  if (!WORD_LIST.includes(guess)) {
-    alert("Mot inconnu.");
-    return;
-  }
-
+  
   const row = document.createElement("div");
   row.classList.add("row");
-
+  
   for (let i = 0; i < WORD_LENGTH; i++) {
-    const letterBox = document.createElement("div");
-    letterBox.classList.add("tile");
-    letterBox.textContent = guess[i];
-
-    if (guess[i] === solution[i]) {
-      letterBox.classList.add("correct");
-    } else if (solution.includes(guess[i])) {
-      letterBox.classList.add("present");
-    } else {
-      letterBox.classList.add("absent");
-    }
-
-    row.appendChild(letterBox);
+      const letterBox = document.createElement("div");
+      letterBox.classList.add("tile");
+      letterBox.textContent = guess[i];
+      
+      if (guess[i] === solution[i]) {
+          letterBox.classList.add("correct");
+        } else if (solution.includes(guess[i])) {
+            letterBox.classList.add("present");
+        } else {
+            letterBox.classList.add("absent");
+        }
+        
+        row.appendChild(letterBox);
   }
 
   game.appendChild(row);
@@ -99,32 +89,29 @@ function updateKeyboardColors(guess, feedback) {
 
 function getFeedback(guess, solution) {
   const feedback = Array(guess.length).fill("absent");
-  const solutionArr = solution.split('');
-  const guessArr = guess.split('');
   let used = Array(solution.length).fill(false);
 
-  for (let i = 0; i < guessArr.length; i++) {
-    if (guessArr[i] === solutionArr[i]) {
+  // 1. lettres bien placées
+  for (let i = 0; i < guess.length; i++) {
+    if (guess[i] === solution[i]) {
       feedback[i] = "correct";
       used[i] = true;
-      solutionArr[i] = null;
-      guessArr[i] = null;
     }
   }
 
-  for (let i = 0; i < guessArr.length; i++) {
-    if (!guessArr[i]) continue;
-    const idx = solutionArr.indexOf(guessArr[i]);
+  // 2. lettres présentes mal placées
+  for (let i = 0; i < guess.length; i++) {
+    if (feedback[i] === "correct") continue;
+
+    const idx = solution.indexOf(guess[i]);
     if (idx !== -1 && !used[idx]) {
       feedback[i] = "present";
       used[idx] = true;
-      solutionArr[idx] = null;
     }
   }
 
   return feedback;
 }
-
 
 let currentGuess = '';
 let locked = false;
@@ -147,6 +134,9 @@ function synchronizeInput() {
 
 function submitGuess() {
   if (locked) return;
+
+  currentGuess = input.value.toUpperCase();
+  
   const guess = currentGuess.toLowerCase();
 
   if (guess.length !== WORD_LENGTH) {
@@ -193,6 +183,5 @@ function submitGuess() {
   currentGuess = "";
   synchronizeInput();
 }
-
 
 

@@ -3,11 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Wordle Français</title>
+  <title>JE D'MO</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Wordle en Français 🇫🇷</h1>
+  <h1>JE D'MO</h1>
+
+<div class="legend">
+  <div class="legend-item">
+    <span class="legend-color correct-color"></span>
+    <span><strong>Bonne position</strong> : la lettre est dans le mot et à la bonne place</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-color present-color"></span>
+    <span><strong>Mal placée</strong> : la lettre est dans le mot mais pas à la bonne place</span>
+  </div>
+  <div class="legend-item">
+    <span class="legend-color absent-color"></span>
+    <span><strong>Pas dans le mot</strong> : la lettre ne fait pas partie du mot</span>
+  </div>
+</div>
+  
 
   <div id="game"></div>
 
@@ -45,14 +61,14 @@
     <button class="key">M</button>
   </div>
   <div class="keyboard-row">
-    <button class="key" data-action="enter">Entrer</button>
+    <button class="keyEnter" data-action="enter">Entrer</button>
     <button class="key">W</button>
     <button class="key">X</button>
     <button class="key">C</button>
     <button class="key">V</button>
     <button class="key">B</button>
     <button class="key">N</button>
-    <button class="key" data-action="back">⌫</button>
+    <button class="keyBack" data-action="back">⌫</button>
   </div>
 </div>
 
