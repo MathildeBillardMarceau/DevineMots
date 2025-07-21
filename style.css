@@ -71,7 +71,7 @@ input {
   gap: 4px;
 }
 
-.keyEnter, .keyBack {
+#keyEnter, #keyBack {
   width: 84.5px;
   font-size: 1em;
   font-weight: bold;
