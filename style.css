@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  margin: 50px;
+  margin: 40px;
 }
 
 #game {
@@ -116,7 +116,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 40px auto;
+  margin: 30px auto;
   max-width: 400px;
   gap: 8px;
   padding: 10px;
@@ -155,7 +155,7 @@ input {
 }
 
 .replayButton {
-  margin: 20px;
+  margin: 5px;
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
