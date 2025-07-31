@@ -2,6 +2,7 @@
 Ce projet est une adaptation du jeu Wordle, où le joueur doit deviner un mot caché, de 5 lettres, en un nombre limité de tentatives.
 Il est voué à être modifié et amélioré au fil du temps.
 Ce *Jedmo* est en français, avec des mots français, qui peuvent être modifiés manuellement via le fichier mots.js. 
+Sans PUB et distractions.
 
 ## Fonctionnalités
 
@@ -35,6 +36,7 @@ ___
 This project is an adaptation of the Wordle game, where the player must guess a hidden 5-letter word within a limited number of attempts. 
 It is intended to be modified and improved over time.
 This *Jedmo* is in french with french words, that can be manually changed in mots.js file. 
+No ads or distractions.
 
 ## Features
 
