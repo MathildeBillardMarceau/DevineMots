@@ -116,7 +116,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 20px auto;
+  margin: 40px auto;
   max-width: 400px;
   gap: 8px;
   padding: 10px;
@@ -154,6 +154,18 @@ input {
   border-color: #3c4f48;
 }
 
+.replayButton {
+  margin: 20px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #8e5c7c42;
+  border-radius: 4px;
+}
+
+.replayButton:hover {
+  background-color: #8e5c7c42;
+}
 
 @media only screen and (max-width: 767px) {
   .tile { width: 28px; font-size: 16px; }
