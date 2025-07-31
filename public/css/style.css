@@ -58,6 +58,7 @@ input {
   font-size: 1.2rem;
   padding: 5px;
   text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
 .keyboard {
@@ -83,7 +84,6 @@ input {
   border-radius: 4px;
   cursor: pointer;
 }
-
 
 .key {
   font-size: 0.8rem;
