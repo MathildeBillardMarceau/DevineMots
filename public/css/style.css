@@ -24,7 +24,7 @@ h1 {
   display: flex;
 }
 
- .tile {
+.tile {
   width: 40px;
   height: 40px;
   border: 2px solid #999;
@@ -36,23 +36,10 @@ h1 {
   background-color: #fff;
 } 
 
-.correct {
-  background-color: #ad7a99;
-  color: white;
-  border-color: #ad7a99;
-}
 
-.present {
-  background-color: #b2cede;
-  color: white;
-  border-color: #b2cede;
-}
-
-.absent {
-  background-color: #5a716a;
-  color: white;
-  border-color: #5a716a;
-}
+.correct, .key[data-state="correct"], .correct-color { background-color: #ad7a99; }
+.present, .key[data-state="present"], .present-color { background-color: #b2cede; }
+.absent, .key[data-state="absent"], .absent-color { background-color: #5a716a; }
 
 input {
   font-size: 1.2rem;
