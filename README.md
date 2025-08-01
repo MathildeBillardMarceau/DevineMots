@@ -4,6 +4,8 @@ Il est voué à être modifié et amélioré au fil du temps.
 Ce *Jedmo* est en français, avec des mots français, qui peuvent être modifiés manuellement via le fichier mots.js. 
 Sans PUB et distractions.
 
+![visuel de JEDMO sur téléphone](/public/icones/Screen%20Shot%202025-08-01%20at%2015.26.34.png)
+
 ## Fonctionnalités
 
 - Interface utilisateur intuitive
@@ -37,6 +39,8 @@ This project is an adaptation of the Wordle game, where the player must guess a 
 It is intended to be modified and improved over time.
 This *Jedmo* is in french with french words, that can be manually changed in mots.js file. 
 No ads or distractions.
+
+![JEDMO display on phone](/public/icones/Screen%20Shot%202025-08-01%20at%2015.26.34.png)
 
 ## Features
 
