@@ -171,7 +171,7 @@ function submitGuess() {
 
   currentTurn++;
   if (guess === solution) {
-    message.textContent = "🎉 Bravo ! Tu as trouvé le mot ! Plus que 7948 autres !";
+    message.textContent = "🎉 Bravo ! Tu as trouvé le mot ! Plus que 3435 autres !";
     locked = true;
     input.disabled = true;
   } else if (currentTurn === MAX_TURNS) {
