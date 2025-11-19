@@ -10,7 +10,11 @@ Il est voué à être modifié et amélioré au fil du temps.
 Ce *Jedmo* est en français, avec des mots français, qui peuvent être modifiés manuellement via le fichier mots.js. 
 Sans PUB et distractions.
 
+<div align = "center">
+   
 ![visuel de JEDMO sur téléphone](/public/icones/Screen%20Shot%202025-08-01%20at%2015.26.34.png)
+
+</div>
 
 ## Fonctionnalités
 
@@ -38,15 +42,23 @@ Pour installer et exécuter ce jeu localement, suivez ces étapes :
 Ce projet est sous licence MIT.
 
 ___
-
+<div align = "center">
+   
 # JEDMO
+
+</div>
 
 This project is an adaptation of the Wordle game, where the player must guess a hidden 5-letter word within a limited number of attempts. 
 It is intended to be modified and improved over time.
 This *Jedmo* is in french with french words, that can be manually changed in mots.js file. 
 No ads or distractions.
 
+<div align = "center">
+
 ![JEDMO display on phone](/public/icones/Screen%20Shot%202025-08-01%20at%2015.26.34.png)
+
+
+</div>
 
 ## Features
 
