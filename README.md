@@ -1,6 +1,9 @@
+<div align = "center">
 ![License](https://img.shields.io/badge/license-MIT-blueviolet.svg?style=flat)
 
 # JEDMO
+</div>
+
 Ce projet est une adaptation du jeu Wordle, où le joueur doit deviner un mot caché, de 5 lettres, en un nombre limité de tentatives.
 Il est voué à être modifié et amélioré au fil du temps.
 Ce *Jedmo* est en français, avec des mots français, qui peuvent être modifiés manuellement via le fichier mots.js. 
