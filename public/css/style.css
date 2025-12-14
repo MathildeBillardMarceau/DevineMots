@@ -159,6 +159,20 @@ strong {
   transition: 1s ease-in-out;
 }
 
+.insight {
+  margin: 5px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #8e5c7c42;
+  border-radius: 4px;
+}
+
+.insight:hover {
+  background-color: #8e5c7c42;
+  transition: 1s ease-in-out;
+}
+
 @media only screen and (max-width: 767px) {
   .tile { width: 28px; font-size: 1rem; }
   .key { margin-top:20px; width:60px; height: 50px; padding: 6px; font-size: 0.95rem; }

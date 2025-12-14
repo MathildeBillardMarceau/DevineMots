@@ -184,6 +184,11 @@ function submitGuess() {
   synchronizeInput();
 }
 
+function helperToGuess(solution) {
+ if (!solution) {
+  console.log({solution, definitions})
+ }
+}
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js')
